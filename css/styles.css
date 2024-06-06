@@ -477,6 +477,8 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
+  left: 0;
+  z-index: 999;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
