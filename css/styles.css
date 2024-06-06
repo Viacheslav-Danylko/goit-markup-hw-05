@@ -553,7 +553,6 @@ img {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
-  position: relative;
 }
 
 .modal-input:focus {
