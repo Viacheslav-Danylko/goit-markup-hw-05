@@ -428,6 +428,10 @@ img {
   width: 264px;
 }
 
+.foot-box-list {
+  margin-right: 80px;
+}
+
 .foot-content {
   font-weight: 500;
   font-size: 16px;
@@ -466,6 +470,60 @@ img {
 .foot-link:hover,
 .foot-link:focus {
   background-color: #31d0aa;
+}
+
+.foot-subscribe-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.foot-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-email {
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  background: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-email::placeholder {
+  color: #FFFFFF;
+}
+
+.foot-subscribe-btm {
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  border: none;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+}
+
+.foot-subscribe-icon {
+  margin-left: 16px;
+  fill: #FFFFFF;
 }
 
 /* ------------------- --------------------------- */
