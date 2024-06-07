@@ -590,6 +590,10 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-form-textarea {
+  margin-bottom: 16px;
+}
+
 .modal-text {
   width: 100%;
   height: 120px;
@@ -610,7 +614,7 @@ img {
   font-size: 12px;
   line-height: 117%;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: #8e8f99;
   display: flex;
   align-items: center;
 }
@@ -618,7 +622,7 @@ img {
 .modal-policy-text span {
   width: 16px;
   height: 16px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   border-radius: 2px;
@@ -627,20 +631,43 @@ img {
   fill: transparent;
 }
 
+.modal-policy-span {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+}
+
 .modal-policy-btn:checked + .modal-policy-text span {
   background-color: #404bbf;
   border: none;
-  fill: #FFFFFF;
-
+  fill: #f4f4fd;
 }
 
-.modal-policy-icon {
-  
+.modal-policy {
+  margin-bottom: 24px;
+}
+
+.policy-modal {
+  color: #4d5ae5;
 }
 
 .modal-btn {
   display: block;
   margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  background: #4d5ae5;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------- --------------------------- */
