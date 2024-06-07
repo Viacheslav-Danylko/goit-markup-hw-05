@@ -497,7 +497,7 @@ img {
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
-  /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -547,14 +547,20 @@ img {
   margin-bottom: 8px;
 }
 
+.modal-form-icon {
+  position: relative;
+}
+
 .modal-input {
   width: 100%;
   height: 40px;
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
+  display: block;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -575,6 +581,7 @@ img {
 
 .modal-form-field {
   position: relative;
+  margin-bottom: 16px;
 }
 
 .modal-icon-wrap {
@@ -582,13 +589,18 @@ img {
   position: absolute;
   left: 16px;
   top: 50%;
-  /* transform: translatey(-50%); */
+  transform: translatey(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text {
   width: 100%;
   height: 120px;
-  border: 1px solid #2e2f42;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
@@ -597,11 +609,11 @@ img {
   resize: none;
 }
 
-.modal-text::placeholder {
+/* .modal-text::placeholder {
   font-size: 12px;
   line-height: 117%;
   letter-spacing: 0.04em;
   color: #2e2f42;
-} 
+}  */
 
 /* ------------------- --------------------------- */
